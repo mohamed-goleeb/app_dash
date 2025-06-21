@@ -3,3 +3,7 @@ backgroundColor="#07082b"
 secondaryBackgroundColor="#1b1a55"
 textColor="#fffadc"
 
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
