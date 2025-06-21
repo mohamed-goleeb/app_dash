@@ -10,15 +10,6 @@ from folium.plugins import AntPath
 
 st.set_page_config(page_title="Riyadh Medical Cluster Dashboard", layout="wide")
 
-st.markdown("""
-    <style>
-    /* إخفاء أيقونة النص الغريبة أعلى الصفحة */
-    [data-testid="collapsedControl"] > span {
-        visibility: hidden;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
 # --- CSS Styling ---
 def local_css(css_code):
     st.markdown(f"<style>{css_code}</style>", unsafe_allow_html=True)
