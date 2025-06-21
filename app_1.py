@@ -1,10 +1,12 @@
 
 import streamlit as st
 import pandas as pd
-from streamlit_folium import st_folium
-import plotly.figure_factory as ff
-from folium.plugins import AntPath
 import plotly.express as px
+import plotly.figure_factory as ff
+import folium
+from streamlit_folium import st_folium
+from folium.plugins import AntPath
+
 
 st.set_page_config(page_title="Riyadh Medical Cluster Dashboard", layout="wide")
 
