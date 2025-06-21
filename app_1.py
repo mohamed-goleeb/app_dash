@@ -10,11 +10,56 @@ from folium.plugins import AntPath
 
 st.set_page_config(page_title="Riyadh Medical Cluster Dashboard", layout="wide")
 
-st.markdown("""
-    <style>
-    * { font-family: Arial, sans-serif; }
-    </style>
-""", unsafe_allow_html=True)
+# --- CSS Styling ---
+def local_css(css_code):
+    st.markdown(f"<style>{css_code}</style>", unsafe_allow_html=True)
+
+css = """
+/* الخلفية العامة */
+body {
+    background-color: #070F2B;
+    color: #FFFADC;
+}
+
+/* الشريط الجانبي */
+section[data-testid="stSidebar"] {
+    background-color: #1B1A55;
+    color: #FFFADC;
+}
+
+/* العناوين والنصوص */
+h1, h2, h3, h4, h5, h6, p, div, span {
+    color: #FFFADC !important;
+    font-family: 'Arial', sans-serif !important;
+}
+
+/* القوائم المنسدلة */
+.css-1v0mbdj, .css-10trblm, .stSelectbox div {
+    color: #FFFADC !important;
+}
+
+/* الأزرار */
+.stButton > button {
+    background-color: #1B1A55;
+    color: #FFFADC;
+}
+
+/* تحسين العرض على الموبايل */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .stApp {
+        padding: 1rem;
+    }
+    section[data-testid="stSidebar"] {
+        padding: 1rem;
+    }
+}
+"""
+
+local_css(css)
+
 
 df = pd.read_csv("sample_delivery_data.csv")
 drivers = pd.read_csv("drivers_info.csv")
