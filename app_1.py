@@ -8,7 +8,7 @@ from streamlit_folium import st_folium
 from folium.plugins import AntPath
 
 
-st.set_page_config(page_title="Riyadh Medical Cluster Dashboard", layout="wide")
+st.set_page_config(page_title="Riyadh Medical Cluster Dashboard")
 
 # --- CSS Styling ---
 def local_css(css_code):
