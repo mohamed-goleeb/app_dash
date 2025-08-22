@@ -240,7 +240,7 @@ with tab2:
     </style>
     <hr style='margin-top: 50px; margin-bottom: 10px;'>
     <div class="sidebar-footer">
-        Made with by✌️ <strong>Mohamed Abdulmonem</strong>
+        Made with by✌️ <strong>Mohamed Abdulmuniem</strong>
     </div>
 """, unsafe_allow_html=True)
 
