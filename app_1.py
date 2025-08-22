@@ -68,7 +68,7 @@ tab1, tab2 = st.tabs(["📊 Overview", "🚗 Driver Performance"])
 
 with tab1:
     st.markdown("<h1 style='text-align: center; color:#FFFADC;'>Riyadh Medical Cluster II</h1>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center; color:#FFFADC;'>Project Supervisor : ✌️ Nawaf Ibrahim ✌️</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color:#FFFADC;'>Reporting : ✌️ Mohamed Abdulmuniem ✌️</h3>", unsafe_allow_html=True)
     st.divider()
 
     total_samples = df["عدد العينات"].sum()
