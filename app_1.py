@@ -224,7 +224,7 @@ with tab2:
             st.write(f"**Lab:** {driver_data['المختبر']}")
             st.write(f"**Company:** {driver_data['الشركة المشغلة']}")
 
-    #st.sidebar.markdown("Made by Mohamed Abdulonem")  
+    #st.sidebar.markdown("Made by Mohamed Abdulmuniem")  
     st.sidebar.markdown("""
     <style>
         .sidebar-footer {
